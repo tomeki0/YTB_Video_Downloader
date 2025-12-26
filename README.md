@@ -1,4 +1,4 @@
-<h1><img src="assets/app_icon.png" alt="Kobeni Icon" width="120">Kobeni - YT Download v3</h1>
+<h1><img src="assets/app_icon.ico" alt="Kobeni Icon" width="120">Kobeni - YT Download v3</h1>
 
 <p align="center">
   <em>Este projeto foi desenvolvido com foco em estudo e uso pessoal.</em><br>
