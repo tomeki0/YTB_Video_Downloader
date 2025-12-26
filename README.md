@@ -56,7 +56,7 @@ Se você apenas quer usar o programa, **sem modificar o código**:
 
 Se quiser estudar, modificar ou adaptar o projeto:
 
-👉 <a href="https://download-directory.github.io/?url=https://github.com/YuReN31/Kobeni_YT/tree/main/code" target="_blank">**[Download do projeto]**</a>
+👉 <a href="https://downgit.github.io/#/home?url=https:%2F%2Fgithub.com%2FYuReN31%2FKobeni_YT%2Ftree%2Fmain%2Fcode&fileName=Kobeni_YT_v3_code" target="_blank">**[Download do projeto]**</a>
 
 👉 Ou se quiser clonar o repositório:
 ```bash
