@@ -63,7 +63,7 @@ Se quiser estudar, modificar ou adaptar o projeto:
 
 1. Clone o repositório:
 ```bash
-   git clone https://github.com/YuReN31/Kobeni_YT
+   git clone https://github.com/YuReN31/Kobeni_YT.git
 ```
 
 2. Instale as dependências:
