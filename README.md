@@ -48,7 +48,7 @@
 
 Se você apenas quer usar o programa, **sem modificar o código**:
 
-👉 **[Download do executável (.exe)](exe/)**
+👉 **[Download do executável (.exe)](https://github.com/YuReN31/Kobeni_YT/raw/main/exe/Kobeni_YT_Download.zip)**
 
 > Não é necessário instalar Python nem dependências.
 
@@ -56,13 +56,15 @@ Se você apenas quer usar o programa, **sem modificar o código**:
 
 Se quiser estudar, modificar ou adaptar o projeto:
 
-👉 **[Repositório do projeto](code/)**
+👉 **[Download do projeto](https://download-directory.github.io/?url=https://github.com/YuReN31/Kobeni_YT/tree/main/code)**
 
 **Passos:**
 
 1. Clone o repositório:
 ```bash
-   git clone https://github.com/YuReN31/Kobeni_YT.git
+   git clone --filter=blob:none --sparse https://github.com/YuReN31/Kobeni_YT.git
+  cd Kobeni_YT
+  git sparse-checkout set code
 ```
 
 2. Instale as dependências:
