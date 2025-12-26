@@ -1,4 +1,4 @@
-<p align="center"><img src="assets/app_icon.ico" alt="Kobeni Icon" width="120"></p>p
+<p align="center"><img src="assets/app_icon.ico" alt="Kobeni Icon" width="120"></p>
 <h1 align="center">Kobeni - YT Download v3</h1>
 
 <p align="center">
