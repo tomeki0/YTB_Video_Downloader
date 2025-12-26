@@ -3,8 +3,7 @@
 
 <p align="center">
   <em>Este projeto foi desenvolvido com foco em estudo e uso pessoal.</em><br>
-  É uma ferramenta de automação para download de vídeos e músicas do YouTube,<br>
-  priorizando simplicidade, controle local e estabilidade.
+  É uma ferramenta de automação para download de vídeos e músicas do YouTube
 </p>
 
 <p align="center">
