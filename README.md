@@ -58,9 +58,7 @@ Se quiser estudar, modificar ou adaptar o projeto:
 
 👉 **[Download do projeto](https://download-directory.github.io/?url=https://github.com/YuReN31/Kobeni_YT/tree/main/code)**
 
-**Passos:**
-
-1. Ou se quiser clonar o repositório:
+👉 Ou se quiser clonar o repositório:
 ```bash
    git clone --filter=blob:none --sparse https://github.com/YuReN31/Kobeni_YT.git
    cd Kobeni_YT
