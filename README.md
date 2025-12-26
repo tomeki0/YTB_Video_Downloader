@@ -63,8 +63,8 @@ Se quiser estudar, modificar ou adaptar o projeto:
 1. Clone o repositório:
 ```bash
    git clone --filter=blob:none --sparse https://github.com/YuReN31/Kobeni_YT.git
-  cd Kobeni_YT
-  git sparse-checkout set code
+   cd Kobeni_YT
+   git sparse-checkout set code
 ```
 
 2. Instale as dependências:
