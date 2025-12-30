@@ -16,14 +16,31 @@ from PIL import Image
 import os
 
 class YouTubeDownloaderGUI:
+
     def __init__(self, root):
         self.root = root
         self.root.title("Kobeni - YT Downloader v3.0")
         self.root.geometry("1100x750")
-        
+
         ctk.set_appearance_mode("dark")
         ctk.set_default_color_theme("blue")
 
+
+        self.manager = None
+        self.download_thread = None
+        self.current_list_type = "pending"
+        self.is_downloading = False
+        self.list_box = None
+
+        # 🔑 controle de ciclo de vida
+        self._running = True
+        self._refresh_job = None
+        self._resize_timer = None
+
+        self.setup_ui()
+        self.setup_manager()
+        self.refresh_periodically()
+        
         try:
             self.root.iconbitmap("app_icon.ico")
         except:
@@ -32,15 +49,30 @@ class YouTubeDownloaderGUI:
             except Exception as e:
                 self.log_message(f"Ícone não encontrado: {e}", "WARNING")
         
-        self.manager = None
-        self.download_thread = None
-        self.current_list_type = "pending"
-        self.is_downloading = False
-        self.list_box = None
+        self.root.protocol("WM_DELETE_WINDOW", self.on_close)
         
-        self.setup_ui()
-        self.setup_manager()
-        self.refresh_periodically()
+        
+    def on_close(self):
+        # sinaliza que o app está encerrando
+        self._running = False
+
+        # cancela o refresh periódico
+        if self._refresh_job is not None:
+            try:
+                self.root.after_cancel(self._refresh_job)
+            except:
+                pass
+
+        # cancela o timer de resize, se existir
+        if self._resize_timer is not None:
+            try:
+                self.root.after_cancel(self._resize_timer)
+            except:
+                pass
+
+        # fecha a janela
+        self.root.destroy()
+
     
     def open_link(self, url):
         webbrowser.open(url)
@@ -639,14 +671,20 @@ class YouTubeDownloaderGUI:
     def clear_log(self):
         self.log_text.delete(1.0, tk.END)
         self.log_message("Log limpo")
-    
+        
     def refresh_periodically(self):
-        try:
-            if not self.is_downloading:
-                self.refresh_lists()
-        except:
-            pass
-        self.root.after(1000, self.refresh_periodically)
+    	if not self._running:
+           return
+
+    	try:
+           if not self.is_downloading:
+            self.refresh_lists()
+            
+    	except Exception as e:
+           self.log_message(f"Erro no refresh: {e}", "ERROR")
+
+    	self._refresh_job = self.root.after(1000, self.refresh_periodically)
+
     
     def show_settings(self):
         settings_window = ctk.CTkToplevel(self.root)
