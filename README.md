@@ -1,5 +1,5 @@
 <p align="center"><img src="assets/app_icon.ico" alt="Kobeni Icon" width="120"></p>
-<h1 align="center">Kobeni - YT Download v3</h1>
+<h1 align="center">(Tá com bug)Kobeni - YT Download v3</h1>
 
 <p align="center">
   <em>Este projeto foi desenvolvido com foco em estudo e uso pessoal.</em><br>
@@ -50,7 +50,7 @@ Se você apenas quer usar o programa, **sem modificar o código**:
 > ⚠️ Alguns antivírus podem acusar falso positivo por ser um executável empacotado em Python. <br>
 > O código-fonte está disponível para verificação.
 
-👉 **[Download do executável (.exe)](https://drive.google.com/file/d/1JNmt36m0YFhv0_6PMa7hFEYNpuydymiy/view?usp=sharing)**
+👉 **[Download do executável (.exe)]()**
 
 > Não é necessário instalar Python nem dependências.
 
