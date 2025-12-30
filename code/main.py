@@ -48,9 +48,9 @@ def cleanup_old_logs():
 def main():
     print("\n" + "█"*60)
     print("█" + " "*58 + "█")
-    print("█" + "Kobeni YT Downloader v3.0".center(58) + "█")
-    print("█" + "By: YuReN31_".center(58) + "█")
-    print("█" + "github.com/yuReN31".center(58) + "█")
+    print("█" + "YTB Video Downloader v3.0".center(58) + "█")
+    print("█" + "By: YuReN31_ && Tomeki0".center(58) + "█")
+    print("█" + "github.com/tomeki0".center(58) + "█")
     print("█" + " "*58 + "█")
     print("█"*60 + "\n")
 
@@ -74,16 +74,17 @@ def main():
     
     print("\nVerificando aria2c...")
     
-    try:
-        from core.config import config
-        if config.ARIA2C_PATH.exists():
-            print("✓ aria2c encontrado")
-        else:
-            print("aria2c não encontrado")
-            print(f"  Coloque aria2c.exe em: {config.ARIA2C_PATH}")
-    except:
-        print("Não foi possível verificar aria2c")
-    
+    from core.config import config
+    if config.ARIA2C_PATH and config.ARIA2C_PATH.exists():
+    	print(f"✓ aria2c encontrado em: {config.ARIA2C_PATH}")
+    else:
+        print("✗ aria2c não encontrado no sistema")
+        print("  Instale o aria2 e garanta que 'aria2c' esteja no PATH")
+        print("  Linux: sudo apt install aria2")
+        print("  Windows: https://aria2.github.io/")
+        input("Pressione ENTER para sair...")
+        sys.exit(1)
+
     print("\nIniciando interface gráfica...")
     
     try:
