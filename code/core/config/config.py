@@ -1,6 +1,7 @@
 import json
 from pathlib import Path
 import os
+import shutil
 
 DEBUG_MODE = False
 
@@ -19,7 +20,9 @@ AUXILIARIES_FOLDER.mkdir(parents=True, exist_ok=True)
 CONFIG_FILE = CONFIG_FOLDER / "config.json"
 DATABASE_FILE = DATABASE_FOLDER / "dados.json"
 
-ARIA2C_PATH = AUXILIARIES_FOLDER / "aria2c" / "aria2c.exe"
+aria2c_path = shutil.which("aria2c")
+ARIA2C_PATH = Path(aria2c_path) if aria2c_path else None
+
 YTDOWN_URL = "https://ytdown.to/pt2/"
 
 QUALITIES = {
