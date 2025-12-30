@@ -4,6 +4,9 @@ set -e
 
 echo "=== YTB Video Downloader - Setup Linux ==="
 
+# 🔹 ENTRAR NA PASTA DO PROJETO
+cd code || exit 1
+
  ---------- 1. Verificar Python ----------
 if ! command -v python3 >/dev/null 2>&1; then
     echo "✗ Python3 não encontrado."
