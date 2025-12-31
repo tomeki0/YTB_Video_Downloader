@@ -71,7 +71,8 @@ Este é um **fork otimizado para Linux** do *Kobeni YT Downloader*, com correç�
 ## 🔧 Requisitos
 
 ### Sistema
-- Linux
+
+- Linux (Pop!_OS / Ubuntu e derivados).
 - Python 3.10 ou superior
 
 ---
