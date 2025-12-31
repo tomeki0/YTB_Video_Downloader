@@ -137,13 +137,14 @@ setup_windows.bat
 ### Linux
 
 ```bash
-./run_linux.sh
+./run_app_linux.sh
 ```
 
 ### Windows
 
 ```bat
-run_windows.bat
+run_app_windows.bat
+Ou executar arquivo .bat
 ```
 
 > Os scripts de execução cuidam automaticamente da ativação do ambiente virtual.
