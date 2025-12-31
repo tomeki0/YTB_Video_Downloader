@@ -19,7 +19,7 @@ class YouTubeDownloaderGUI:
 
     def __init__(self, root):
         self.root = root
-        self.root.title("YTB Video Downloader v3.0")
+        self.root.title("Kobeni && Tomeki0 - YTB Video Downloader v3.0")
         self.root.geometry("1100x750")
 
         ctk.set_appearance_mode("dark")
@@ -693,8 +693,9 @@ class YouTubeDownloaderGUI:
         settings_window.resizable(False, False)
 
         
-        settings_window.transient(self.root)  
-        settings_window.grab_set()
+        settings_window.transient(self.root) 
+        settings_window.after(0, settings_window.grab_set)
+        settings_window.focus_force()
         
         def center_window(window):
             window.update_idletasks() 
@@ -936,4 +937,5 @@ def run_gui():
 
 if __name__ == "__main__":
     run_gui()
+
 
