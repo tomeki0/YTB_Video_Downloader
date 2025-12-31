@@ -1,12 +1,11 @@
 <p align="center">
-<img src="assets/app_icon.ico" alt="Kobeni YT Downloader Icon" width="120">
+<img src="assets/app_icon.ico" alt="YTB Video Downloader Icon" width="120">
 </p>
 
-<h1 align="center">Kobeni YT Downloader – Linux Fork 🐧</h1>
+<h1 align="center">YT Video Downloader – Linux Fork 🐧</h1>
 
 <p align="center">
-<em>Projeto educacional e experimental, com foco em aprendizado e uso pessoal.</em><br>
-Ferramenta de automação para download de vídeos e músicas do YouTube.
+<em>Ferramenta de automação para download de vídeos e músicas do YouTube.</em><br>
 </p>
 
 <p align="center">
