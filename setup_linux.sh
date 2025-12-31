@@ -5,7 +5,7 @@ echo "=== YTB Video Downloader - Setup Linux ==="
 # 1. Entrar na pasta do projeto
 # O "|| exit" garante que o script pare se a pasta não existir
 cd code || {
-    echo "Erro: pasta 'code' não encontrada. Execute este script dentro da pasta 'code'."
+    echo "Erro: pasta 'code' não encontrada."
     exit 1
 }
 
