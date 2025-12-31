@@ -38,8 +38,8 @@ Este é um **fork otimizado para Linux** do *Kobeni YT Downloader*, com correç�
 ## 🚀 Funcionalidades
 
 - **Downloads de Alta Qualidade:** Vídeos de 144p até **1080p**.
-- - **Áudio:** Extração em 48k e 128k.
-- - **Downloads Paralelos:** Uso do `aria2` para downloads multi-thread rápidos e estáveis.
+- **Áudio:** Extração em 48k e 128k.
+- **Downloads Paralelos:** Uso do `aria2` para downloads multi-thread rápidos e estáveis.
 - **Fila de Downloads:** Aceita múltiplos links simultâneos.
 - **Organização:** Renomeia arquivos automaticamente e mantém histórico em JSON.
 - **Interface Gráfica:** Baseada em CustomTkinter, moderna e responsiva.
