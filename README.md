@@ -46,10 +46,9 @@ Principais funcionalidades:
 - Suporte a múltiplas qualidades:
   - Vídeo: 144p até 1080p
   - Áudio: 48k e 128k
-- Downloads paralelos usando aria2
+- Downloads paralelos 
 - Aceita múltiplos links em fila
 - Renomeia arquivos automaticamente após o download
-- Armazena informações localmente em JSON
 - Interface gráfica simples e estável
 
 ---
