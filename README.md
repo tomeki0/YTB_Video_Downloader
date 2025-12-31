@@ -135,9 +135,9 @@ setup_windows.bat
 
 ## Executar o Aplicativo
 
-### Linux
-
 Dentro do diretorio raiz do projeto: YTB_Video_Downloader
+
+### Linux
 
 ```bash
 chmod +x run_app_linux.sh
