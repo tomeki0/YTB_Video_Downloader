@@ -44,6 +44,8 @@ Este é um **fork otimizado para Linux** do *Kobeni YT Downloader*, com correç�
 - **Organização:** Renomeia arquivos automaticamente e mantém histórico em JSON.
 - **Interface Gráfica:** Baseada em CustomTkinter, moderna e responsiva.
 
+---
+
 ## 🐧 Compatibilidade e Requisitos
 
 Este fork foi desenvolvido com foco em sistemas **Linux** (baseados em Debian/Ubuntu).
@@ -51,6 +53,8 @@ Este fork foi desenvolvido com foco em sistemas **Linux** (baseados em Debian/Ub
 * **Sistemas Testados:** Pop!_OS 22.04+ e Ubuntu 22.04+.
 * **Compatibilidade Estendida:** Deve funcionar nativamente em Linux Mint, Debian e derivados.
 * **Requisito Principal:** Python 3.10 ou superior.
+
+---
 
 ## 📦 Instalação
 
