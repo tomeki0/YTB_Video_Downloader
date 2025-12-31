@@ -13,7 +13,6 @@
 <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License">
 <img src="https://img.shields.io/badge/Status-Stable-success?style=for-the-badge" alt="Status">
 <img src="https://img.shields.io/badge/Linux-Supported-important?style=for-the-badge&logo=linux">
-<img src="https://img.shields.io/badge/Windows-Supported-informational?style=for-the-badge&logo=windows">
 </p>
 
 ---
