@@ -137,6 +137,7 @@ setup_windows.bat
 ### Linux
 
 ```bash
+chmod +x run_app_linux.sh
 ./run_app_linux.sh
 ```
 
