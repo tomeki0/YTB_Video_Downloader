@@ -19,7 +19,7 @@ class YouTubeDownloaderGUI:
 
     def __init__(self, root):
         self.root = root
-        self.root.title("Kobeni - YT Downloader v3.0")
+        self.root.title("YTB Video Downloader v3.0")
         self.root.geometry("1100x750")
 
         ctk.set_appearance_mode("dark")
@@ -936,3 +936,4 @@ def run_gui():
 
 if __name__ == "__main__":
     run_gui()
+
