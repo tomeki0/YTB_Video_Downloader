@@ -34,6 +34,7 @@ O objetivo do fork é fazer o projeto rodar corretamente no Linux, sem gambiarra
 ✅ Uso do aria2 do sistema via PATH  
 ✅ Código compatível com Linux e preparado para cross-platform  
 ✅ Mensagens de erro mais claras e seguras
+✅ Correção para exibir o menu de configurações
 
 ---
 
