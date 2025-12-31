@@ -16,7 +16,6 @@
 </p>
 
 ---
-
 ## 📖 Sobre este fork
 
 Este é um **fork otimizado para Linux** do *Kobeni YT Downloader*, com correções de estabilidade, compatibilidade para sistemas Linux (Pop!_OS / Ubuntu e derivados).
