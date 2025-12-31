@@ -32,7 +32,7 @@ O objetivo do fork é fazer o projeto rodar corretamente no Linux, sem gambiarra
 ✅ Remoção da dependência Windows-only (aria2c.exe)  
 ✅ Uso do aria2 do sistema via PATH  
 ✅ Código compatível com Linux e preparado para cross-platform  
-✅ Mensagens de erro mais claras e seguras
+✅ Mensagens de erro mais claras e seguras  
 ✅ Correção para exibir o menu de configurações
 
 ---
@@ -82,75 +82,169 @@ Principais funcionalidades:
 
 ---
 
-## Instalação
+## 📦 Instalação
 
-### 🐧 Linux (automático)
+### 🐧 Linux (Instalação Automática - Recomendado)
 
-#### 1. Clonar o repositório
+#### 1️⃣ Clonar o repositório
 
 ```bash
 git clone https://github.com/tomeki0/YTB_Video_Downloader
 cd YTB_Video_Downloader
 ```
 
-#### 2. Executar o setup automático
+#### 2️⃣ Executar o setup automático
 
 ```bash
 chmod +x setup_linux.sh
 ./setup_linux.sh
 ```
 
-O script irá:
-- Verificar Python 3.10+
-- Instalar dependências do sistema (se necessário)
-- Criar o ambiente virtual (`.venv`)
-- Instalar as dependências Python
+**O script irá:**
+- ✅ Verificar Python 3.10+
+- ✅ Instalar dependências do sistema (se necessário)
+- ✅ Criar o ambiente virtual (`.venv`)
+- ✅ Instalar as dependências Python
 
 ---
 
-### 🪟 Windows
+### 🛠️ Linux (Instalação Manual - Plano B)
 
-#### 1. Clonar o repositório
+Caso o script automático apresente problemas, siga os passos abaixo:
 
-```Powershell/CMD
-git clone https://github.com/tomeki0/YTB_Video_Downloader
+#### 1️⃣ Abra um terminal no diretório do projeto
+
+Navegue até o diretório raiz do projeto.
+
+```bash
 cd YTB_Video_Downloader
 ```
 
-#### 2. Executar o setup automático
+---
 
-```bat
-setup_windows.bat
+#### 2️⃣ Entre na pasta `code`
+
+```bash
+cd code
 ```
-
-> ⚠️ No Windows, o `aria2c` precisa estar no PATH.  
-> **Download:** https://aria2.github.io/
 
 ---
 
-## Executar o Aplicativo
+#### 3️⃣ Atualize a lista de pacotes do sistema
 
-Dentro do diretorio raiz do projeto: YTB_Video_Downloader
+```bash
+sudo apt update
+```
 
-### Linux
+> 💡 Esse comando garante que os repositórios do sistema estejam atualizados.
+
+---
+
+#### 4️⃣ Instale as dependências do sistema
+
+```bash
+sudo apt install -y python3 python3-venv python3-tk aria2
+```
+
+**Esses pacotes são necessários para:**
+- 🐍 Executar o projeto em Python 3
+- 📦 Criar ambientes virtuais
+- 🖼️ Utilizar a interface gráfica (Tkinter)
+- ⬇️ Realizar downloads com aria2
+
+---
+
+#### 5️⃣ Crie o ambiente virtual Python
+
+Ainda dentro da pasta `code`, execute:
+
+```bash
+python3 -m venv .venv
+```
+
+> ✨ Isso criará um ambiente virtual isolado chamado `.venv`.  
+> ⚠️ Se o diretório `.venv` já existir, este passo pode ser ignorado.
+
+---
+
+#### 6️⃣ Ative o ambiente virtual
+
+```bash
+source .venv/bin/activate
+```
+
+> ✅ Após a ativação, o terminal passará a usar o Python e o pip do ambiente virtual.
+
+---
+
+#### 7️⃣ Atualize o `pip`
+
+```bash
+pip install --upgrade pip
+```
+
+> 🔄 Isso garante que o gerenciador de pacotes Python esteja atualizado.
+
+---
+
+#### 8️⃣ Instale as dependências do projeto
+
+```bash
+pip install -r requirements.txt
+```
+
+> 🎉 Todas as bibliotecas necessárias ao projeto serão instaladas dentro do ambiente virtual.
+
+---
+
+## ▶️ Executar o Aplicativo
+
+### 🚀 Execução Automática (Recomendado)
+
+Dentro do diretório raiz do projeto: `YTB_Video_Downloader`
 
 ```bash
 chmod +x run_app_linux.sh
 ./run_app_linux.sh
 ```
 
-### Windows
-
-```bat
-./run_app_windows.bat
-Ou executar arquivo .bat
-```
-
-> Os scripts de execução cuidam automaticamente da ativação do ambiente virtual.
+> 💡 O script de execução cuida automaticamente da ativação do ambiente virtual.
 
 ---
 
-## Verificação do aria2
+### 🛠️ Execução Manual
+
+Caso prefira iniciar o programa manualmente, siga os passos abaixo:
+
+#### 1️⃣ Entre na pasta `code`
+
+```bash
+cd code
+```
+
+---
+
+#### 2️⃣ Ative o ambiente virtual
+
+```bash
+source .venv/bin/activate
+```
+
+> ✅ Certifique-se de que o ambiente virtual está ativado antes de executar o programa.
+
+---
+
+#### 3️⃣ Execute o programa
+
+```bash
+python main.py
+```
+
+> 🎉 A interface gráfica do aplicativo será iniciada!
+
+---
+
+## 🔍 Verificação do aria2
 
 ### Linux
 
@@ -166,14 +260,7 @@ aria2c --version
 aria2 version 1.36.0
 ```
 
-### Windows
-
-```bat
-where aria2c
-aria2c --version
-```
-
-> Se o comando não for encontrado, verifique se o `aria2c` foi adicionado corretamente ao PATH.
+> ⚠️ Se o comando não for encontrado, verifique se o `aria2c` foi adicionado corretamente ao PATH.
 
 ---
 
