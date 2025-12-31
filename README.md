@@ -1,115 +1,207 @@
-<p align="center"> <img src="assets/app_icon.ico" alt="Kobeni YT Downloader Icon" width="120"> </p> <h1 align="center">Kobeni YT Downloader – Linux Fork 🐧</h1> <p align="center"> <em>Projeto educacional e experimental, com foco em aprendizado e uso pessoal.</em><br> Ferramenta de automação para download de vídeos e músicas do YouTube. </p> <p align="center"> <img src="https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.10+"> <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License"> <img src="https://img.shields.io/badge/Status-Stable-success?style=for-the-badge" alt="Status"> <img src="https://img.shields.io/badge/Linux-Supported-important?style=for-the-badge&logo=linux"> <img src="https://img.shields.io/badge/Windows-Supported-informational?style=for-the-badge&logo=windows"> </p>
-📖 Sobre este fork
+<p align="center">
+<img src="assets/app_icon.ico" alt="Kobeni YT Downloader Icon" width="120">
+</p>
+
+<h1 align="center">Kobeni YT Downloader – Linux Fork 🐧</h1>
+
+<p align="center">
+<em>Projeto educacional e experimental, com foco em aprendizado e uso pessoal.</em><br>
+Ferramenta de automação para download de vídeos e músicas do YouTube.
+</p>
+
+<p align="center">
+<img src="https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.10+">
+<img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License">
+<img src="https://img.shields.io/badge/Status-Stable-success?style=for-the-badge" alt="Status">
+<img src="https://img.shields.io/badge/Linux-Supported-important?style=for-the-badge&logo=linux">
+<img src="https://img.shields.io/badge/Windows-Supported-informational?style=for-the-badge&logo=windows">
+</p>
+
+---
+
+## 📖 Sobre este fork
+
 Este é um fork Linux-friendly do Kobeni YT Downloader, com correções de estabilidade, compatibilidade e boas práticas para sistemas Linux (Pop!_OS / Ubuntu e derivados).
 
 O objetivo do fork é fazer o projeto rodar corretamente no Linux, sem gambiarras Windows-only e sem erros de GUI.
 
-✨ Principais melhorias deste fork
-✅ Correção de crash ao fechar a janela (Tkinter after() loop)
-✅ Correção de ordem de inicialização da GUI
-✅ Remoção da dependência Windows-only (aria2c.exe)
-✅ Uso do aria2 do sistema via PATH
-✅ Código compatível com Linux e preparado para cross-platform
-✅ Indentação Python corrigida (sem TABs misturados)
+---
+
+## ✨ Principais melhorias deste fork
+
+✅ Correção de crash ao fechar a janela (Tkinter after() loop)  
+✅ Correção de ordem de inicialização da GUI  
+✅ Remoção da dependência Windows-only (aria2c.exe)  
+✅ Uso do aria2 do sistema via PATH  
+✅ Código compatível com Linux e preparado para cross-platform  
+✅ Indentação Python corrigida (sem TABs misturados)  
 ✅ Mensagens de erro mais claras e seguras
 
-🚀 O que o programa faz
+---
+
+## 🚀 O que o programa faz
+
 Principais funcionalidades:
 
-Gera links diretos de download a partir de vídeos do YouTube
-Suporte a múltiplas qualidades:
-Vídeo: 144p até 1080p
-Áudio: 48k e 128k
-Downloads paralelos usando aria2
-Aceita múltiplos links em fila
-Renomeia arquivos automaticamente após o download
-Armazena informações localmente em JSON
-Interface gráfica simples e estável
-⚙️ Tecnologias utilizadas
-Python 3.10+
-Requests – comunicação HTTP
-CustomTkinter – interface gráfica multiplataforma
-aria2c – gerenciador de downloads (paralelo e estável)
-Bibliotecas padrão do Python
-⚠️ Este projeto NÃO utiliza Selenium.
-Todo o processo funciona via requests e chamadas diretas ao aria2.
+- Gera links diretos de download a partir de vídeos do YouTube
+- Suporte a múltiplas qualidades:
+  - Vídeo: 144p até 1080p
+  - Áudio: 48k e 128k
+- Downloads paralelos usando aria2
+- Aceita múltiplos links em fila
+- Renomeia arquivos automaticamente após o download
+- Armazena informações localmente em JSON
+- Interface gráfica simples e estável
 
-🐧 Compatibilidade
-Testado em:
+---
 
-Pop!_OS 22.04+
-Ubuntu 22.04+
-Deve funcionar em:
+## ⚙️ Tecnologias utilizadas
 
-Linux Mint
-Debian-based distros
-Também suporta:
+- Python 3.10+
+- Requests – comunicação HTTP
+- CustomTkinter – interface gráfica multiplataforma
+- aria2c – gerenciador de downloads (paralelo e estável)
+- Bibliotecas padrão do Python
 
-Windows
-🔧 Requisitos
-Sistema
-Linux ou Windows
-Python 3.10 ou superior
-Dependências do sistema (Linux)
-bash
+> ⚠️ Este projeto NÃO utiliza Selenium.  
+> Todo o processo funciona via requests e chamadas diretas ao aria2.
+
+---
+
+## 🐧 Compatibilidade
+
+**Testado em:**
+- Pop!_OS 22.04+
+- Ubuntu 22.04+
+
+**Deve funcionar em:**
+- Linux Mint
+- Debian-based distros
+
+**Também suporta:**
+- Windows
+
+---
+
+## 🔧 Requisitos
+
+### Sistema
+- Linux ou Windows
+- Python 3.10 ou superior
+
+### Dependências do sistema (Linux)
+
+```bash
 sudo apt update
 sudo apt install python3 python3-venv python3-tk aria2
-⚠️ Importante:
-Este fork não usa aria2c.exe.
-O aria2 deve estar instalado no sistema e disponível no PATH.
+```
 
-📦 Instalação
-Linux
-1️⃣ Clonar o repositório
-bash
+> ⚠️ **Importante:**  
+> Este fork não usa aria2c.exe.  
+> O aria2 deve estar instalado no sistema e disponível no PATH.
+
+---
+
+## 📦 Instalação
+
+### Linux
+
+#### 1️⃣ Clonar o repositório
+
+```bash
 git clone https://github.com/SEU_USUARIO/Kobeni_YT.git
 cd Kobeni_YT/code
-2️⃣ Criar ambiente virtual
-bash
+```
+
+#### 2️⃣ Criar ambiente virtual
+
+```bash
 python3 -m venv .venv
 source .venv/bin/activate
-3️⃣ Instalar dependências Python
-bash
+```
+
+#### 3️⃣ Instalar dependências Python
+
+```bash
 pip install -r requirements.txt
-Ou use o script automatizado:
-bash
+```
+
+#### Ou use o script automatizado:
+
+```bash
 chmod +x setup_linux.sh
 ./setup_linux.sh
-▶️ Executar
-bash
+```
+
+---
+
+## ▶️ Executar
+
+```bash
 python main.py
-🔍 Verificação do aria2 (opcional, mas recomendado)
-bash
+```
+
+---
+
+## 🔍 Verificação do aria2 (opcional, mas recomendado)
+
+```bash
 which aria2c
 aria2c --version
-Saída esperada:
+```
 
+**Saída esperada:**
+```
 /usr/bin/aria2c
 aria2 version 1.36.0
-🧠 O que foi modificado tecnicamente
-Controle explícito de ciclo de vida da GUI (_running, _refresh_job)
-Cancelamento correto de callbacks Tkinter (after_cancel)
-Implementação do método on_close
-Substituição de caminhos fixos por shutil.which("aria2c")
-Tratamento seguro de None para dependências externas
-Remoção de referências a .exe no código
-⚠️ Aviso Legal
+```
+
+---
+
+## 🧠 O que foi modificado tecnicamente
+
+- Controle explícito de ciclo de vida da GUI (`_running`, `_refresh_job`)
+- Cancelamento correto de callbacks Tkinter (`after_cancel`)
+- Implementação do método `on_close`
+- Substituição de caminhos fixos por `shutil.which("aria2c")`
+- Tratamento seguro de `None` para dependências externas
+- Remoção de referências a `.exe` no código
+
+---
+
+## ⚠️ Aviso Legal
+
 Este software pode violar os Termos de Serviço do YouTube.
 
 O desenvolvedor original e o mantenedor deste fork não se responsabilizam pelo uso indevido.
 
-Use por sua conta e risco.
+**Use por sua conta e risco.**
 
-📜 Créditos
-Projeto original: YuReN31_
-Fork e correções Linux: SEU_NOME
-🛠️ Status do Fork
-✅ Funcional no Linux
-✅ GUI estável
-✅ Downloads operacionais
-🔄 Testado em outras distros
-🔄 Testado em Wayland puro
-📄 Licença
+---
+
+## 📜 Créditos
+
+- **Projeto original:** YuReN31_
+- **Fork e correções Linux:** SEU_NOME
+
+---
+
+## 🛠️ Status do Fork
+
+- ✅ Funcional no Linux
+- ✅ GUI estável
+- ✅ Downloads operacionais
+- 🔄 Testado em outras distros
+- 🔄 Testado em Wayland puro
+
+---
+
+## 📄 Licença
+
 MIT License
 
-<p align="center"> Feito com ❤️ para a comunidade Linux </p>
+---
+
+<p align="center">
+Feito com ❤️ para a comunidade Linux
+</p>
