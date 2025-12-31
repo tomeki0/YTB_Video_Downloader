@@ -93,7 +93,7 @@ Principais funcionalidades:
 #### 1. Clonar o repositório
 
 ```bash
-git clone https://github.com/SEU_USUARIO/Kobeni_YT.git
+git clone https://github.com/tomeki0/YTB_Video_Downloader
 cd Kobeni_YT
 ```
 
@@ -117,7 +117,7 @@ O script irá:
 #### 1. Clonar o repositório
 
 ```bat
-git clone https://github.com/SEU_USUARIO/Kobeni_YT.git
+git clone https://github.com/tomeki0/YTB_Video_Downloader
 cd Kobeni_YT
 ```
 
