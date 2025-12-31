@@ -19,9 +19,9 @@
 
 ## 📖 Sobre este fork
 
-Este é um fork Linux-friendly do Kobeni YT Downloader, com correções de estabilidade, compatibilidade e boas práticas para sistemas Linux (Pop!_OS / Ubuntu e derivados).
+Este é um **fork otimizado para Linux** do *Kobeni YT Downloader*, com correções de estabilidade, compatibilidade e boas práticas para sistemas Linux (Pop!_OS / Ubuntu e derivados).
 
-O objetivo do fork é fazer o projeto rodar corretamente no Linux, sem gambiarras Windows-only e sem erros de GUI.
+O objetivo do fork é fazer o projeto rodar corretamente em distribuições Linux (Pop!_OS, Ubuntu, Debian e derivados).
 
 ---
 
@@ -37,18 +37,14 @@ O objetivo do fork é fazer o projeto rodar corretamente no Linux, sem gambiarra
 
 ---
 
-## 🚀 O que o programa faz
+## 🚀 Funcionalidades
 
-Principais funcionalidades:
-
-- Gera links diretos de download a partir de vídeos do YouTube
-- Suporte a múltiplas qualidades:
-  - Vídeo: 144p até 1080p
-  - Áudio: 48k e 128k
-- Downloads paralelos 
-- Aceita múltiplos links em fila
-- Renomeia arquivos automaticamente após o download
-- Interface gráfica simples e estável
+- **Downloads de Alta Qualidade:** Vídeos de 144p até **1080p**.
+- - **Áudio:** Extração em 48k e 128k.
+- - **Downloads Paralelos:** Uso do `aria2` para downloads multi-thread rápidos e estáveis.
+- **Fila de Downloads:** Aceita múltiplos links simultâneos.
+- **Organização:** Renomeia arquivos automaticamente e mantém histórico em JSON.
+- **Interface Gráfica:** Baseada em CustomTkinter, moderna e responsiva.
 
 ---
 
