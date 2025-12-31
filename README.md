@@ -117,7 +117,7 @@ O script irá:
 
 #### 1. Clonar o repositório
 
-```bat
+```Powershell/CMD
 git clone https://github.com/tomeki0/YTB_Video_Downloader
 cd YTB_Video_Downloader
 ```
@@ -145,7 +145,7 @@ chmod +x run_app_linux.sh
 ### Windows
 
 ```bat
-run_app_windows.bat
+./run_app_windows.bat
 Ou executar arquivo .bat
 ```
 
