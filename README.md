@@ -94,7 +94,7 @@ Principais funcionalidades:
 
 ```bash
 git clone https://github.com/tomeki0/YTB_Video_Downloader
-cd Kobeni_YT
+cd YTB_Video_Downloader
 ```
 
 #### 2. Executar o setup automático
@@ -118,7 +118,7 @@ O script irá:
 
 ```bat
 git clone https://github.com/tomeki0/YTB_Video_Downloader
-cd Kobeni_YT
+cd YTB_Video_Downloader
 ```
 
 #### 2. Executar o setup automático
