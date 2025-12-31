@@ -44,38 +44,13 @@ Este é um **fork otimizado para Linux** do *Kobeni YT Downloader*, com correç�
 - **Organização:** Renomeia arquivos automaticamente e mantém histórico em JSON.
 - **Interface Gráfica:** Baseada em CustomTkinter, moderna e responsiva.
 
----
+## 🐧 Compatibilidade e Requisitos
 
-## ⚙️ Tecnologias utilizadas
+Este fork foi desenvolvido com foco em sistemas **Linux** (baseados em Debian/Ubuntu).
 
-- Python 3.10+
-- Requests – comunicação HTTP
-- CustomTkinter – interface gráfica multiplataforma
-- aria2c – gerenciador de downloads (paralelo e estável)
-- Bibliotecas padrão do Python
-
----
-
-## 🐧 Compatibilidade
-
-**Testado em:**
-- Pop!_OS 22.04+
-- Ubuntu 22.04+
-
-**Deve funcionar em:**
-- Linux Mint
-- Debian-based distros
-
----
-
-## 🔧 Requisitos
-
-### Sistema
-
-- Linux (Pop!_OS / Ubuntu e derivados).
-- Python 3.10 ou superior
-
----
+* **Sistemas Testados:** Pop!_OS 22.04+ e Ubuntu 22.04+.
+* **Compatibilidade Estendida:** Deve funcionar nativamente em Linux Mint, Debian e derivados.
+* **Requisito Principal:** Python 3.10 ou superior.
 
 ## 📦 Instalação
 
@@ -103,7 +78,7 @@ chmod +x setup_linux.sh
 
 ---
 
-### 🛠️ Linux (Instalação Manual - Plano B)
+### 🛠️ Linux (Instalação Manual)
 
 Caso o script automático apresente problemas, siga os passos abaixo:
 
@@ -256,6 +231,16 @@ aria2 version 1.36.0
 ```
 
 > ⚠️ Se o comando não for encontrado, verifique se o `aria2c` foi adicionado corretamente ao PATH.
+
+---
+
+## ⚙️ Tecnologias utilizadas
+
+- Python 3.10+
+- Requests – comunicação HTTP
+- CustomTkinter – interface gráfica multiplataforma
+- aria2c – gerenciador de downloads (paralelo e estável)
+- Bibliotecas padrão do Python
 
 ---
 
