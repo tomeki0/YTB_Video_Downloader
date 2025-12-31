@@ -19,9 +19,7 @@
 
 ## 📖 Sobre este fork
 
-Este é um **fork otimizado para Linux** do *Kobeni YT Downloader*, com correções de estabilidade, compatibilidade e boas práticas para sistemas Linux (Pop!_OS / Ubuntu e derivados).
-
-O objetivo do fork é fazer o projeto rodar corretamente em distribuições Linux (Pop!_OS, Ubuntu, Debian e derivados).
+Este é um **fork otimizado para Linux** do *Kobeni YT Downloader*, com correções de estabilidade, compatibilidade para sistemas Linux (Pop!_OS / Ubuntu e derivados).
 
 ---
 
