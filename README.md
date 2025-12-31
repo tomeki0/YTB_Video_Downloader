@@ -33,7 +33,6 @@ O objetivo do fork é fazer o projeto rodar corretamente no Linux, sem gambiarra
 ✅ Remoção da dependência Windows-only (aria2c.exe)  
 ✅ Uso do aria2 do sistema via PATH  
 ✅ Código compatível com Linux e preparado para cross-platform  
-✅ Indentação Python corrigida (sem TABs misturados)  
 ✅ Mensagens de erro mais claras e seguras
 
 ---
@@ -62,9 +61,6 @@ Principais funcionalidades:
 - aria2c – gerenciador de downloads (paralelo e estável)
 - Bibliotecas padrão do Python
 
-> ⚠️ Este projeto NÃO utiliza Selenium.  
-> Todo o processo funciona via requests e chamadas diretas ao aria2.
-
 ---
 
 ## 🐧 Compatibilidade
@@ -72,13 +68,11 @@ Principais funcionalidades:
 **Testado em:**
 - Pop!_OS 22.04+
 - Ubuntu 22.04+
+- Windows 11
 
 **Deve funcionar em:**
 - Linux Mint
 - Debian-based distros
-
-**Também suporta:**
-- Windows
 
 ---
 
@@ -88,61 +82,77 @@ Principais funcionalidades:
 - Linux ou Windows
 - Python 3.10 ou superior
 
-### Dependências do sistema (Linux)
-
-```bash
-sudo apt update
-sudo apt install python3 python3-venv python3-tk aria2
-```
-
-> ⚠️ **Importante:**  
-> Este fork não usa aria2c.exe.  
-> O aria2 deve estar instalado no sistema e disponível no PATH.
+> ⚠️ **Importante:** Este fork não utiliza `aria2c.exe`. O aria2 deve estar instalado no sistema e disponível no PATH.
 
 ---
 
-## 📦 Instalação
+## Instalação
 
-### Linux
+### 🐧 Linux (recomendado)
 
-#### 1️⃣ Clonar o repositório
+#### 1. Clonar o repositório
 
 ```bash
 git clone https://github.com/SEU_USUARIO/Kobeni_YT.git
-cd Kobeni_YT/code
+cd Kobeni_YT
 ```
 
-#### 2️⃣ Criar ambiente virtual
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-```
-
-#### 3️⃣ Instalar dependências Python
-
-```bash
-pip install -r requirements.txt
-```
-
-#### Ou use o script automatizado:
+#### 2. Executar o setup automático
 
 ```bash
 chmod +x setup_linux.sh
 ./setup_linux.sh
 ```
 
+O script irá:
+- Verificar Python 3.10+
+- Instalar dependências do sistema (se necessário)
+- Criar o ambiente virtual (`.venv`)
+- Instalar as dependências Python
+
 ---
 
-## ▶️ Executar
+### 🪟 Windows
 
-```bash
-python main.py
+#### 1. Clonar o repositório
+
+```bat
+git clone https://github.com/SEU_USUARIO/Kobeni_YT.git
+cd Kobeni_YT
 ```
 
+#### 2. Executar o setup automático
+
+```bat
+setup_windows.bat
+```
+
+> ⚠️ No Windows, o `aria2c` precisa estar no PATH.  
+> **Download:** https://aria2.github.io/
+
 ---
 
-## 🔍 Verificação do aria2 (opcional, mas recomendado)
+## Executar o Aplicativo
+
+### Linux
+
+```bash
+./run_linux.sh
+```
+
+### Windows
+
+```bat
+run_windows.bat
+```
+
+> Os scripts de execução cuidam automaticamente da ativação do ambiente virtual.
+
+---
+
+## Verificação do aria2
+
+### Linux
 
 ```bash
 which aria2c
@@ -150,10 +160,20 @@ aria2c --version
 ```
 
 **Saída esperada:**
+
 ```
 /usr/bin/aria2c
 aria2 version 1.36.0
 ```
+
+### Windows
+
+```bat
+where aria2c
+aria2c --version
+```
+
+> Se o comando não for encontrado, verifique se o `aria2c` foi adicionado corretamente ao PATH.
 
 ---
 
@@ -181,17 +201,15 @@ O desenvolvedor original e o mantenedor deste fork não se responsabilizam pelo 
 ## 📜 Créditos
 
 - **Projeto original:** YuReN31_
-- **Fork e correções Linux:** SEU_NOME
+- **Fork e correções Linux:** Tomeki0
 
 ---
 
 ## 🛠️ Status do Fork
 
-- ✅ Funcional no Linux
+- ✅ Funcional no PopOs / Ubuntu
 - ✅ GUI estável
 - ✅ Downloads operacionais
-- 🔄 Testado em outras distros
-- 🔄 Testado em Wayland puro
 
 ---
 
