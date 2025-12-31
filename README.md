@@ -211,7 +211,7 @@ source .venv/bin/activate
 #### 3️⃣ Execute o programa
 
 ```bash
-python main.py
+python3 main.py
 ```
 
 > 🎉 A interface gráfica do aplicativo será iniciada!
