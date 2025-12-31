@@ -1,139 +1,67 @@
-<p align="center"><img src="assets/app_icon.ico" alt="Kobeni Icon" width="120"></p>
-<h1 align="center">(Tá com bug)Kobeni - YT Download v3</h1>
+<p align="center">
+  <img src="assets/app_icon.ico" alt="YTB Video Downloader Icon" width="120">
+</p>
+
+<h1 align="center">YTB Video Downloader</h1>
 
 <p align="center">
-  <em>Este projeto foi desenvolvido com foco em estudo e uso pessoal.</em><br>
-  É uma ferramenta de automação para download de vídeos e músicas do YouTube
+  <em>Projeto educacional e experimental, com foco em aprendizado e uso pessoal.</em><br>
+  Ferramenta de automação para download de vídeos e músicas do YouTube.
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.12-blue?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.12">
+  <img src="https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.10+">
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License">
-  <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge" alt="Status">
+  <img src="https://img.shields.io/badge/Status-Stable-success?style=for-the-badge" alt="Status">
+  <img src="https://img.shields.io/badge/Linux-Supported-important?style=for-the-badge&logo=linux">
+  <img src="https://img.shields.io/badge/Windows-Supported-informational?style=for-the-badge&logo=windows">
 </p>
 
 ---
 
 ## ⚙️ Tecnologias utilizadas
 
-- **Python 3.12**
-- **Requests** – comunicação HTTP
-- **CustomTkinter** – interface gráfica simples
-- **aria2c** – gestor de downloads (downloads paralelos e estáveis)
-- Outras bibliotecas padrão do Python
+- Python 3.10+
+- Requests – comunicação HTTP
+- CustomTkinter – interface gráfica multiplataforma
+- aria2c – gerenciador de downloads (paralelo e estável)
+- Bibliotecas padrão do Python
 
-> ⚠️ **A versão atual não utiliza Selenium.**  
-> Todo o processo funciona exclusivamente via requests.
+> ⚠️ Este projeto NÃO utiliza Selenium.  
+> Todo o processo funciona via requests e chamadas diretas ao aria2.
 
 ---
 
 ## 🚀 O que o programa faz
 
-✨ **Principais funcionalidades:**
+Principais funcionalidades:
 
 - Gera links diretos de download a partir de vídeos do YouTube
-- Suporta múltiplas qualidades:
-  - **Vídeo:** 144p até 1080p
-  - **Áudio:** 48k e 128k
-- Realiza downloads paralelos usando o **aria2c**
-- Permite colar vários links e deixar o processo rodando sem supervisão
-- Renomeia corretamente os arquivos após o download
-- Salva informações dos vídeos localmente em JSON
+- Suporte a múltiplas qualidades:
+  - Vídeo: 144p até 1080p
+  - Áudio: 48k e 128k
+- Downloads paralelos usando aria2
+- Aceita múltiplos links em fila
+- Renomeia arquivos automaticamente após o download
+- Armazena informações localmente em JSON
+- Interface gráfica simples e estável
 
 ---
 
-## 📦 Como usar
+## 🖥️ Sistemas suportados
 
-### 🔹 Versão pronta (recomendada)
+- Linux (Pop!_OS, Ubuntu e derivados Debian)
+- Windows
 
-Se você apenas quer usar o programa, **sem modificar o código**:
-> ⚠️ Alguns antivírus podem acusar falso positivo por ser um executável empacotado em Python. <br>
-> O código-fonte está disponível para verificação.
+Este fork removeu dependências exclusivas do Windows e utiliza o aria2 instalado no sistema.
 
-👉 **[Download do executável (.exe)]()**
+---
 
-> Não é necessário instalar Python nem dependências.
+## 📦 Instalação e uso
 
-### 🔹 Versão para desenvolvedores
+### Linux
 
-Se quiser estudar, modificar ou adaptar o projeto:
-
-👉 <a href="https://downgit.github.io/#/home?url=https:%2F%2Fgithub.com%2FYuReN31%2FKobeni_YT%2Ftree%2Fmain%2Fcode&fileName=Kobeni_YT_v3_code" target="_blank">**[Download do projeto]**</a>
-
-👉 Ou se quiser clonar o repositório:
 ```bash
-   git clone --filter=blob:none --sparse https://github.com/YuReN31/Kobeni_YT.git
-   cd Kobeni_YT
-   git sparse-checkout set code
-```
-
-2. Instale as dependências:
-```bash
-   pip install -r requirements.txt
-```
-
-3. Execute o programa:
-```bash
-   python main.py
-```
-
----
-
-## 🖥️ Interface
-
-<p align="center">
-  <img src="assets/screenshot.png" alt="Interface do Kobeni" width="700">
-</p>
-
----
-
-## ℹ️ Informações importantes
-- 📁 Pasta padrão de download: `C:\Users\UserName\Downloads\YT Downloads`
-- 🔄 Downloads continuam mesmo após erros
-
----
-
-## ❓ Perguntas frequentes (Eu acho)
-
-### 🔐 Algum dado é coletado?
-
-**Não.**
-
-- Nenhuma informação pessoal é enviada para servidores externos
-- O único dado enviado é o link do vídeo do YouTube, utilizado exclusivamente para gerar o download
-- Todas as informações dos vídeos são armazenadas **localmente no seu PC**
-
-### ⚖️ Isso é um serviço legítimo?
-
-**Depende do uso.**
-
-✅ Para uso próprio, não há problema
-
-❌ **Não me responsabilizo por:**
-- Redistribuição de conteúdo protegido
-- Uso comercial
-- Violação de direitos autorais
-
-> O projeto é **educacional e experimental**.
-
----
-
-## 👀 Observações finais
-
-Este projeto foi criado:
-- 📚 Para aprendizado prático
-- 🚫 Não é nenhum tipo de produto comercial
-- 🔧 É apenas uma ferramenta
-
----
-
-<p align="center">
-  Feito por <strong>YuReN31_</strong><br>
-  com muito <s>amor</s> cansaço ☕
-</p>
-
-<p align="center">
-  <a href="https://github.com/YuReN31_">
-    <img src="https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github" alt="GitHub">
-  </a>
-</p>
+chmod +x setup_linux.sh
+./setup_linux.sh
+./run_linux.sh
