@@ -31,7 +31,7 @@ O objetivo do fork é fazer o projeto rodar corretamente no Linux, sem gambiarra
 ✅ Correção de ordem de inicialização da GUI  
 ✅ Remoção da dependência Windows-only (aria2c.exe)  
 ✅ Uso do aria2 do sistema via PATH  
-✅ Código compatível com Linux
+✅ Código compatível com Linux  
 ✅ Mensagens de erro mais claras e seguras  
 ✅ Correção para exibir o menu de configurações
 
