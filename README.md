@@ -67,7 +67,6 @@ Principais funcionalidades:
 **Testado em:**
 - Pop!_OS 22.04+
 - Ubuntu 22.04+
-- Windows 11
 
 **Deve funcionar em:**
 - Linux Mint
@@ -78,16 +77,14 @@ Principais funcionalidades:
 ## 🔧 Requisitos
 
 ### Sistema
-- Linux ou Windows
+- Linux
 - Python 3.10 ou superior
-
-> ⚠️ **Importante:** Este fork não utiliza `aria2c.exe`. O aria2 deve estar instalado no sistema e disponível no PATH.
 
 ---
 
 ## Instalação
 
-### 🐧 Linux (recomendado)
+### 🐧 Linux (automático)
 
 #### 1. Clonar o repositório
 
